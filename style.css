@@ -20,7 +20,7 @@ body {
 .player-container {
   height: 500px;
   width: 400px;
-  background: #dce0e5;
+  background: #e4e8ec;
   border-radius: 20px;
   box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
 }
@@ -92,10 +92,13 @@ h3 {
   font-size: 30px;
   color: rgb(179, 182, 187);
   margin-right: 30px;
-
+  cursor: pointer;
+  user-select: none;
 }
 
-
+.fas:hover {
+  filter: brightness(80%)
+}
 
 .main-button {
   font-size: 40px;
