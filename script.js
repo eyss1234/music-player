@@ -104,7 +104,17 @@ function updateProgressBar(e) {
     if (durationSeconds < 10) {
       durationSeconds = `0${durationSeconds}`
     }
-    durationEl.textContent = `${durationMinutes}:${durationSeconds}`
+    // delay switching duration Element to avoid Nan
+    if (durationSeconds) {
+      durationEl.textContent = `${durationMinutes}:${durationSeconds}`
+    }
+    // calculate display for current time
+    const currentMinutes = Math.floor(currentTime / 60);
+    let currentSeconds = Math.floor(currentTime % 60);
+    if (currentSeconds < 10) {
+      currentSeconds = `0${currentSeconds}`
+    }
+    currentTimeEl.textContent = `${currentMinutes}:${currentSeconds}`
   }
 }
 
