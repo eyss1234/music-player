@@ -4,6 +4,8 @@ https://eyss1234.github.io/music-player/
 
 Simple music player built using HTML 5 Audio API
 
+This exercise is based on [Zero to Mastery Academy](https://zerotomastery.io/) course
+
 ### Features
 
 - Play/Pause
